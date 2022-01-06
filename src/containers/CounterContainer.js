@@ -1,6 +1,5 @@
 import React from "react";
-import { useSelector } from "react-redux";
-import { useDispatch } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { decrease, increase, setDiff } from "../modules/counter";
 import Counter from './../components/Counter';
 
