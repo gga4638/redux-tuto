@@ -22,7 +22,6 @@ const initialState = {
 export default function counter(state = initialState, action) {
     switch(action.type) {
         case SET_DIFF:
-            console.log("증감 숫자 변경");
             return {
                 ...state,
                 diff: action.diff

@@ -3,10 +3,13 @@ const ADD_TODO = 'todos/ADD_TODO';
 const TOGGLE_TODO = 'todos/TOGGLE_TODO';
 
 /* 액션 생성함수 선언 */
-let nextId = 1;  // todo 데이터에서 사용 할 고유 id
-export  const addTodo = text => ({
+let nextId = 1;
+export const addTodo = text => ({
     type: ADD_TODO,
-    text
+    todo: {
+        id: nextId++,
+        text
+    }
 });
 export const toggleTodo = id => ({
     type: TOGGLE_TODO,
